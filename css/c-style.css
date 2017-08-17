@@ -70,14 +70,36 @@ h3, h4 {
 	padding: 0%;
 	width: 100%;
 }
-
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+main {
+  min-height: 100%;
+}
 #send-video .page-item.bg-img h1 {color: #ffffff} #send-video .page-item.bg-img h2 {color: #ffffff} #send-video .page-item.bg-img p {color: #ffffff} #thumb-up .page-item.bg-img h1 {color: #000000} #thumb-up .page-item.bg-img h2 {color: #000000} #thumb-up .page-item.bg-img p {color: #000000}
 #big-bite .page-item.bg-img h1 {color: #ffffff} #big-bite .page-item.bg-img h2 {color: #ffffff} #big-bite .page-item.bg-img p {color: #ffffff}
 #wpgmza_map img { max-width:none !important; }
 .wpgmza_widget { overflow: auto; }
 
-
-
+footer.footer {
+  float: left;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+  color:#AAA;
+  width: 100%;
+  text-align: right;
+  height: 1.5rem;
+  z-index: 9;
+}
+footer.footer a {
+  color:#333;
+}
 .page-item.single-page .page-inner-enviro {
 	float: left;
 	margin: 0 auto;

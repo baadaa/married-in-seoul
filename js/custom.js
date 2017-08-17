@@ -53,14 +53,17 @@ jQuery(document).ready(function($) {
   //FORM VALIDATION
   if (jQuery().validate) { jQuery("#commentform").validate(); }
 
+  $('button.button').on('click', function(e) {
+    e.preventDefault();
+  });
   //JS HEIGHT MATCHING - VARIOUS ELEMENTS
   $(function(){
     $(window).load(function(){
       var pageHeight = jQuery(window).height();
       $('.page-item.no-content.bg-img, .page-item.parallax').css({ "height": pageHeight + 'px' });
       ! function(a) {
-        $(".mean-container a.meanmenu-reveal").css({"height": a(".header").outerHeight(),});
-        $(".single-post-content, .mean-container .mean-nav, #masonry-container, .single-attachment .entry-content-media").css({"margin-top": a(".header").outerHeight(),});
+        $(".mean-container a.meanmenu-reveal").css({"height": a(".header").outerHeight()});
+        $(".single-post-content, .mean-container .mean-nav, #masonry-container, .single-attachment .entry-content-media").css({"margin-top": a(".header").outerHeight()});
         $(".contact-alert").css({"margin-top": a(".contact-alert").outerHeight() -  a(".contact-alert").outerHeight() * 2});
       }(window.jQuery);
     });
@@ -88,7 +91,7 @@ jQuery(document).ready(function($) {
   });
 
   // Map init
-
+  if ($('div#wpgmza_map').length !== 0) {
   var marker;
   var MYMAP = {
     map: null,
@@ -257,5 +260,5 @@ jQuery(document).ready(function($) {
     /** Converts numeric degrees to radians */
     return Value * Math.PI / 180;
   }
-
+}
 });
