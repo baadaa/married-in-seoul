@@ -1,0 +1,85 @@
+/*
+Theme Name:     Emma Child
+Theme URI:      http://demo.themebeans.com/emma
+Description:    Make your modifications to Emma in this child theme.
+Author:         ThemeBeans
+Author URI:     http://themebeans.com
+Version:        1.0
+Template:       emma
+*/
+
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body .hero .parallax {
+    background-position: center center !important;
+}
+
+.hero .parallax {
+    background-position: 0 0 !important;
+}
+
+.btn, .button, .btn[type="submit"], .button[type="submit"], input[type="button"], input[type="reset"], input[type="submit"] {
+    line-height: 15px;
+}
+
+
+
+.lang-item a:link {
+
+}
+
+.lang-item img {
+	vertical-align: middle;
+}
+
+
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #666;
+	font-family: "Questrial", 'Noto Sans KR', Helvetica, sans-serif;
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 40px;
+	line-height: 4.0rem;
+	text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Lato", 'Noto Sans KR', Helvetica, sans-serif;
+	font-weight: 100;
+}
+
+h3, h4 {
+	font-weight:300;
+}
+.single-post .entry-content {
+	float: left;
+	padding: 0%;
+	width: 100%;
+}
+
+
+
+
+.page-item.single-page .page-inner-enviro {
+	float: left;
+	margin: 0 auto;
+	padding: 8% 8%;
+	position: relative;
+	text-align: center;
+	top: inherit;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	width: 100%;
+}

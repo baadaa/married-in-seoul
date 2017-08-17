@@ -1,0 +1,482 @@
+/*===================================================================*/
+/*
+/* THEME MOBILE STYLES
+/*
+/*===================================================================*/
+/*===================================================================*/
+/* RESPONSIVE NAVIGATION
+/*===================================================================*/
+.mean-remove,
+nav#mobile-nav li {
+    display: none!important;
+}
+
+a.meanmenu-reveal {
+    display: none;
+}
+
+.mean-container .mean-bar {
+    position: relative;
+    z-index: 800;
+}
+
+.mean-container a.meanmenu-reveal {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: block;
+}
+
+.mean-container a.meanmenu-reveal span {
+    display: block;
+    background: url(../img/sprite.png) no-repeat -75px -273px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.mean-container a.meanmenu-reveal span:hover {
+    opacity: .5;
+}
+
+.mean-container a.meanmenu-reveal.meanclose span {
+    background-position: -75px -373px;
+}
+
+.mean-container .mean-nav {
+    float: left;
+    width: 100%;
+    background: #FFF;
+}
+
+.mean-container .mean-nav ul {
+    border-bottom: 1px solid #ECECEC;
+    border-top: 1px solid #ECECEC;
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    list-style-type: none;
+    display: none;
+    -webkit-transition: all 0s;
+       -moz-transition: all 0s;
+        -ms-transition: all 0s;
+         -o-transition: all 0s;
+}
+
+.mean-container .mean-nav ul li {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.mean-container .mean-nav ul li:first-child {
+    padding-top: .5em;
+}
+
+.mean-container .mean-nav ul li:last-child {
+    padding-bottom: .5em;
+}
+
+
+.mean-container .mean-nav ul li a {
+    color: #888;
+    display: block;
+    font-weight: normal;
+    float: left;
+    width: 100%;
+    font-size: 80%;
+    padding: .2em 20px;
+    margin: 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+.mean-container .mean-nav ul li a:hover {
+    background: #F9F9F9;
+    color: #111;
+}
+
+.mean-container .mean-push {
+    clear: both;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.mean-nav .wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.entry-title img {
+  width: 300px;
+  -webkit-filter: drop-shadow( 0px 0px 5px rgba(0,0,0,0.2) );
+          filter: drop-shadow( 0px 0px 5px rgba(0,0,0,0.2) ); /* Same syntax as box-shadow, except */
+}
+
+
+
+
+/*===================================================================*/
+/*
+/* BEGIN MEDIA QUERIES
+/*
+/*===================================================================*/
+/*===================================================================*/
+/* PRIMARY CUT
+/*===================================================================*/
+
+@media only screen and (max-width : 1100px) {
+    .single-post .entry-meta {
+        display: none;
+    }
+
+    .single-post .entry-content {
+        padding-left: 0;
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width : 782px) {
+
+    /* TYPE */
+    body, p {
+        font-size: 22px;
+        font-size: 2.2rem;
+        line-height: 38px;
+    }
+
+	h1,
+    .page-item.no-content h2 {
+        font-size: 110px;
+        font-size: 11.0rem;
+        line-height: 110px;
+    }
+
+    h2 {
+        font-size: 60px;
+        font-size: 6.0rem;
+        line-height: 70px;
+    }
+
+    h3 {
+        font-size: 25px;
+        font-size: 2.5rem;
+        line-height: 32px;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-size: 2.0rem;
+        line-height: 30px;
+    }
+
+    /* HEADER */
+    .header {
+        background-color: #FFF;
+        padding: 20px!important;
+        position: absolute;
+        top: 0;
+    }
+
+    .logged-in.admin-bar .header {
+        top: 46px;
+    }
+
+    .headerintro {
+        -webkit-animation-name: headerintrox;
+                animation-name: headerintrox;
+    }
+
+    .blog .header,
+    .search .header,
+    .archive .header,
+    .single-post .header {
+        border-bottom: 1px solid #ECECEC;
+    }
+
+    .header .site-title {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .header .logo img {
+       max-height: 25px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    /* HERO / PAGE ITEMS */
+    .hero h3 {
+        margin-top: 5%;
+    }
+
+    .hero h4 {
+        margin-top: 2%;
+    }
+
+    .hero .parallax {
+        background-position: 0 0!important;
+    }
+
+    .hero .page-inner {
+        padding-top: 0%;
+    }
+
+    .hero .page-item,
+    section .page-item {
+        height: auto!important
+    }
+
+    section .page-item .entry-content {
+        margin-top: 30px;
+    }
+
+    section .page-inner,
+    .page-item.no-content.bg-img .page-inner {
+        margin: 0 auto;
+        padding: 20% 10%;
+        position: relative;
+        text-align: center;
+        top: inherit;
+        width: 100%;
+        -webkit-transform: translateY(0);
+           -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+             -o-transform: translateY(0);
+                transform: translateY(0);
+    }
+
+    section .page-item.no-content .page-inner {
+        padding-bottom: 40%!important;
+        padding-top: 40%!important;
+    }
+
+    .page-item .post-edit-link {
+        display: none;
+    }
+
+    .page-item.single-page .page-inner {
+        padding: 5% 10%;
+    }
+
+	/* BLOGROLL / SINGLE  */
+    #masonry-container,
+    .single-post .single-post-content {
+        margin-top: 0!important;
+    }
+
+    #masonry-container article {
+        padding-top: 20px!important;
+    }
+
+    .single-post .single-post-content {
+        padding-top: 20px;
+    }
+
+    .single-post .entry-content {
+        padding-right: 0;
+    }
+
+    .entry-sidebar {
+        display: none;
+    }
+
+    .single-post .content-left {
+        padding: 0;
+        width: 100%;
+    }
+
+    blockquote {
+        margin: 30px 0;
+    }
+
+    pre {
+        margin: 35px 0 35px!important;
+    }
+
+    .entry-content ul,
+    .entry-content ol {
+        margin: 30px 0 30px 20px;
+    }
+
+    .post-password-form input[type="password"] {
+        width: 100%;
+    }
+
+	/* COMMENTS */
+    .comment-form label {
+        position: inherit;
+    }
+
+    .comment-wrap:before {
+        display: none;
+    }
+
+	p.logged-in-as {
+		display: none;
+	}
+
+    #infscr-loading {
+        left: 50%;
+        margin-left: -8px;
+    }
+
+    /* 404 */
+    body.error404 .entry-content {
+        margin-top: -25%;
+    }
+
+}
+
+
+/*===================================================================*/
+/* TABLET LANDSCAPE
+/*===================================================================*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .hero .parallax {
+        background-position: 0 0!important;
+    }
+
+}
+
+@media only screen and (max-width : 600px) {
+    .single-post .entry-title,
+    .single-attachment .entry-title {
+        font-size: 34px;
+        font-size: 3.4rem;
+        line-height: 48px;
+    }
+    .entry-title img {
+      width: 200px;
+    }
+
+    .entry-content h3,
+    .entry-content h4,
+    .entry-content h5 {
+        letter-spacing: 3px;
+    }
+
+}
+
+
+
+/*===================================================================*/
+/* SMALLER SCREENS
+/*===================================================================*/
+@media only screen and (max-width : 414px) {
+    /* HEADER */
+    h1,
+    .page-item.no-content h2 {
+        font-size: 80px;
+        font-size: 8.0rem;
+        line-height: 80px;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-size: 2.0rem;
+        line-height: 30px;
+    }
+
+    h4 {
+        font-size: 16px;
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+
+    .hero h3,
+    .hero .button {
+        margin-top: 8%;
+    }
+
+    .hero h4 {
+        margin-top: 2%;
+    }
+
+    .page-item.single-page .page-inner {
+        padding: 10% 10%;
+    }
+
+    /* THEME BUTTONS */
+    .btn,
+    .button,
+    .btn[type="submit"],
+    .button[type="submit"],
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"] {
+        font-size: 14px;
+        letter-spacing: 0.5em;
+        padding: 16px 2.3em 16px 3.1em;
+    }
+
+    /* COMMETNS */
+    .comment-form input[type="submit"] {
+        width: 100%;
+    }
+
+    .comments .children {
+        margin: 0;
+    }
+
+    /* CONTACT */
+    #BeanForm li.name div {
+        width: 100%;
+    }
+
+    #BeanForm li.name div:last-child {
+        margin-left: 0;
+    }
+
+    #BeanForm span.detail {
+        margin: 5px 0 15px;
+    }
+
+    #BeanForm .submit {
+        margin-top: 15px;
+    }
+
+    #BeanForm .button {
+        width: 100%;
+    }
+
+}
+
+
+
+
+/*===================================================================*/
+/* RETINA
+/*===================================================================*/
+/* @2x */
+@media only screen and (-webkit-min-device-pixel-ratio : 2),only screen and (min--moz-device-pixel-ratio : 2),only screen and (-o-min-device-pixel-ratio : 2/1),only screen and (min-device-pixel-ratio : 2),only screen and (min-resolution : 192dpi),only screen and (min-resolution : 2dppx) {
+    .mean-container a.meanmenu-reveal span,
+    .page-template-template-home-php .page-item .post-edit-link {
+		background-image: url(../img/sprite@2x.png);
+		background-size: 200px 500px;
+	}
+}
+
+/* @3x - IPHONE 6 PLUS AND SIMILAR HD RETINA */
+@media screen and (min-device-width : 414px) and (-webkit-device-pixel-ratio: 3) {
+    .mean-container a.meanmenu-reveal span,
+    .page-template-template-home-php .page-item .post-edit-link {
+        background-image: url(../img/sprite@3x.png);
+    }
+}
