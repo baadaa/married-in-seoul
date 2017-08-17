@@ -33,6 +33,9 @@ body .hero .parallax {
 	vertical-align: middle;
 }
 
+.entry-title img {
+  transition: 0.3s;
+}
 
 
 body,
@@ -68,6 +71,10 @@ h3, h4 {
 	width: 100%;
 }
 
+#send-video .page-item.bg-img h1 {color: #ffffff} #send-video .page-item.bg-img h2 {color: #ffffff} #send-video .page-item.bg-img p {color: #ffffff} #thumb-up .page-item.bg-img h1 {color: #000000} #thumb-up .page-item.bg-img h2 {color: #000000} #thumb-up .page-item.bg-img p {color: #000000}
+#big-bite .page-item.bg-img h1 {color: #ffffff} #big-bite .page-item.bg-img h2 {color: #ffffff} #big-bite .page-item.bg-img p {color: #ffffff}
+#wpgmza_map img { max-width:none !important; }
+.wpgmza_widget { overflow: auto; }
 
 
 
