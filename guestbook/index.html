@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Guestbook | B + Y</title>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel='stylesheet' id='parent-css'  href='/css/style.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='parent-mobile-css'  href='/css/mobile.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='main-css'  href='/css/c-style.css' type='text/css' media='all' />
+  <link rel='stylesheet' id='mobile-css'  href='/css/c-mobile.css?ver=1.0' type='text/css' media='all' />
+  <link rel='stylesheet' id='source-sans-pro-css'  href='http://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400&#038;ver=4.4.2' type='text/css' media='all' />
+  <link rel='stylesheet' id='questrial-css'  href='http://fonts.googleapis.com/css?family=Questrial&#038;ver=4.4.2' type='text/css' media='all' />
+  <link rel='stylesheet' id='wpgmaps-style-css'  href='/css/wpgmza_style.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='gwolle_gb_frontend_css-css'  href='/css/gb-style.css?ver=1.5.7' type='text/css' media='screen' />
+  <script type='text/javascript' src='/js/jquery.js?ver=1.11.3'></script>
+  <script type='text/javascript' src='/js/jquery-migrate.min.js?ver=1.2.1'></script>
+
+	<link rel="canonical" href="http://www.marriedinseoul.com/guestbook/" />
+	<link rel='shortlink' href='http://www.marriedinseoul.com/guestbook/' />
+
+
+  <link rel="alternate" href="http://www.marriedinseoul.com/k/guestbook/" hreflang="ko-KR" />
+	<link rel="alternate" href="http://www.marriedinseoul.com/guestbook/" hreflang="en-US" />
+
+	<link rel="icon" href="/img/cropped-favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" href="/img/cropped-favicon-192x192.png" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="/img/cropped-favicon-180x180.png" />
+	<meta name="msapplication-TileImage" content="/img/cropped-favicon-270x270.png" />
+</head>
+
+<body class="page-template-default">
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+   	<div class="loader-section section-right"></div>
+	</div>
+
+	<nav id="mobile-nav">
+		<div class="menu-primary-en-container">
+      <ul id="menu-primary-en" class="menu">
+        <li class="lang-item">
+          <a href="/k/guestbook/" hreflang="ko-KR">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHiSURBVHjaYvz4/SsDEvj37x+YhLCgGAb+ADFAADEBpfk4uIDo2YNHV89fZP3PyMfBLcDFxc/NLcjNy8nMfPnM2cd374ry84sJCAE1AAQQC8Tg169fb9269cP7DyJiYsqKiv/v3v3/589/FZVnL16uXbtGQFBQWEhIRlYWaAVAAIFs+P///4cPH37//m1oYqwsJfm/t/d/QcH/vJz/ddUKYqJuXl5v3rx5/uIFUBnQBoAAYgT6gZedE6jt1atXXLy8jHsOcEyd+P/37y9/mH7+/CWQEPEpIvLj6zdS0lKMjIwPnj0BCCAWiC+BukVERICMnW/4jP8w/2bibDLMf/aTvfrxOX12dm5pKaACBkZGoJMAAgioAaQaCN6+fcvDzfVVXTdXvZKZjfURu9iHHz/vGrupf//85u1HSUlJRqCef/8AAogJiIGqb968OW3aNKC/PQw4VS1UnjALMXz/4azD5uokvW/f/vr6+pMnT0L8ABBALP/AocTFxQXkHzx0WFNLszZM7ZIJ+5+//3UV2O/du7l6zXphYWEBAQGgAqCTAAII5AcgS1pa2t3d/eXLl2JikkD9ekpcEHeKi0t5eHgANairq4PjlQEggBifv32LHJFwiuEPmMEAYf/5A1YNxAABBgCFMRk3L8TWJAAAAABJRU5ErkJggg==" title="한국어" alt="한국어" /></a>
+          </li>
+          <li>
+            <a href="/rsvp/">RSVP</a>
+          </li>
+          <li>
+            <a href="/two-people/">Two People</a>
+          </li>
+          <li><a href="/together/">Together</a>
+          </li>
+          <li class="current-menu-item"><a href="/guestbook/">Guestbook</a>
+          </li>
+        </ul>
+      </div>
+    </nav><!-- END #mobile-nav -->
+
+		<header class="header headerintro">
+	    <div class="site-title logo">
+		  	<a href="/" title="B + Y" rel="home">
+				<img src="/img/by-black.svg" style="width: 50px;"></a>
+	    </div><!-- END .site-title -->
+			<nav class="nav">
+				<ul id="primary-menu" class="sf-menu main-menu">
+					<li class="lang-item">
+						<a href="/k/guestbook/" hreflang="ko-KR">
+							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHiSURBVHjaYvz4/SsDEvj37x+YhLCgGAb+ADFAADEBpfk4uIDo2YNHV89fZP3PyMfBLcDFxc/NLcjNy8nMfPnM2cd374ry84sJCAE1AAQQC8Tg169fb9269cP7DyJiYsqKiv/v3v3/589/FZVnL16uXbtGQFBQWEhIRlYWaAVAAIFs+P///4cPH37//m1oYqwsJfm/t/d/QcH/vJz/ddUKYqJuXl5v3rx5/uIFUBnQBoAAYgT6gZedE6jt1atXXLy8jHsOcEyd+P/37y9/mH7+/CWQEPEpIvLj6zdS0lKMjIwPnj0BCCAWiC+BukVERICMnW/4jP8w/2bibDLMf/aTvfrxOX12dm5pKaACBkZGoJMAAgioAaQaCN6+fcvDzfVVXTdXvZKZjfURu9iHHz/vGrupf//85u1HSUlJRqCef/8AAogJiIGqb968OW3aNKC/PQw4VS1UnjALMXz/4azD5uokvW/f/vr6+pMnT0L8ABBALP/AocTFxQXkHzx0WFNLszZM7ZIJ+5+//3UV2O/du7l6zXphYWEBAQGgAqCTAAII5AcgS1pa2t3d/eXLl2JikkD9ekpcEHeKi0t5eHgANairq4PjlQEggBifv32LHJFwiuEPmMEAYf/5A1YNxAABBgCFMRk3L8TWJAAAAABJRU5ErkJggg==" title="한국어" alt="한국어" />
+						</a>
+					</li>
+					<li>
+						<a href="/rsvp/">RSVP</a>
+					</li>
+					<li>
+						<a href="/two-people/">Two People</a>
+					</li>
+					<li>
+						<a href="/together/">Together</a>
+					</li>
+					<li class="current-menu-item">
+						<a href="/guestbook/">Guestbook</a>
+					</li>
+				</ul>
+			</nav><!-- END .nav -->
+		</header>
+
+
+
+		<div class="hero">
+			<div class="page-item parallax bg-img" style="background-image: url(/img/guestbook.jpg);">
+				<div class="page-inner fadein">
+					<h1 class="entry-title">
+						Guest<span>-</span>book</h1>
+					<h4 class="entry-tagline">Leave us a note!</h4>
+				</div><!-- END .page-inner -->
+			</div><!-- END .page-item -->
+		</div>
+
+	<main>
+		<section id="gb-entries">
+			<div class="page-item single-page">
+				<div class="page-inner">
+		    		<div class="entry-content">
+							<p class="center"><strike style="color:#999;">Show us your love and leave a little note.</strike></p>
+							<p class="center">Guestbook is closed. Please <a href="mailto:bumhan.yu@gmail.com" style="color:#000;">send us a note</a><br>if you'd like to keep in touch!</p><p>&nbsp;</p>
+
+							<div id="gwolle_gb">
+								<div id="gwolle_gb_entries">
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">김태훈</span>
+											<span class="gb-datetime">
+												<span class="gb-date">April 4, 2016</span>
+												<span class="gb-time">, 10:57 AM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">누나축하하고그날봐여</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">Rudy Lim</span>
+											<span class="gb-datetime">
+												<span class="gb-date">April 3, 2016</span>
+												<span class="gb-time">, 4:02 AM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">형님!!한국에서도 뵙게 되네요~자주 뵙진 못했지만 그래도 이렇게 인연이 닿아서 한구에서의 결혼식에서 뵐수있게 된다니 너무 감격 스러워요~뉴욕에 있는 제가 아는 다른 친구들도 같이 오면 좋겠지만ㅋㅋㅋ암튼 축하 드리구요 결혼식날 뵐께요 행님!!한국 조심히 날아오세요~</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">장현준</span>
+											<span class="gb-datetime">
+												<span class="gb-date">March 29, 2016</span>
+												<span class="gb-time">, 5:32 PM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">형, 결혼을 진심으로 축하드립니다. 형과 형수님의 가정에 행복과 사랑이 가득하길 축복합니다!</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">Brandon Tenney</span>
+											<span class="gb-datetime">
+												<span class="gb-date">March 28, 2016</span>
+												<span class="gb-time">, 12:23 PM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">B:
+										You've been a great resource for our business, and we love working with you.  After getting to know you so well the past few years I am sure your character will lend itself to being a fantastic husband.  Congrats to you and your beautiful wife to be.  Very excited for you!</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">Shondelle</span>
+											<span class="gb-datetime">
+												<span class="gb-date">March 13, 2016</span>
+												<span class="gb-time">, 7:42 PM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">Congrats on such an awesome relationship, I wish u both continued happiness &amp; success. I did read something about dancing &amp; I find that so hard to believe because I've seen her dance &amp; lol she can't...</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">Nee family</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 27, 2016</span>
+												<span class="gb-time">, 12:42 PM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">Congratulations to a wonderful couple. The happiness shines from you both. Have a blessed future as you start a new chapter in your lives. Keep smiling and laughing! We love you!</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">Leo kim</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 21, 2016</span>
+												<span class="gb-time">, 5:07 PM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">영미~~ 드뎌 가는구나~~ 완전 축하해~~
+										오빠보다 먼저 가는게 좀 그렇긴하지만... 사랑스런 동생이니까 봐준다~~ ㅋㅋ
+										결혼진심 축하하고 직접찾아가서 축하해주지못해서 미안하다... 근데 니가 가는데 왜 내기분이 친동생 보내는 기분같지?? ㅋㅋ  이쁜사랑하면서 행복하게 살아라~~</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">Yongmin</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 21, 2016 </span>
+												<span class="gb-time">, 8:06 AM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">누나 결혼 너무 축하드려요ㅎㅎ 청첩장도 너무 이쁘구요ㅎㅎ 베드포드 처치 누님들 한명씩 시집갈때마다 너무너무 기뻐요 흑흑 ㅜㅜ 두분 행복한 결혼생활하시구요 항상 행복하게 사시길 기도하겠습니다!!ㅜㅜ</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">Jiyoung ♡ Jayson</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 20, 2016</span>
+												<span class="gb-time">, 10:27 PM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">너무도 밝고 예쁜 사랑스런 동생 영미야~~ 진심으로 결혼 축하, 다시 한번 축하해 !!! 정말 신선하고 참신한 네 청첩장보고 가슴도 뭉클해지고 재미난 사진으로 인해 빵 터지기도 하고.. ^^ 지난번 다른 모임에서 본 너희 커플 너무도 사랑스러워 보이고 예쁘더라. 스토리를 읽어 내려가다 보니 우리가 어렵게 낯선 뉴욕에 와서 학교 다니면서 만나게 되서 벌써 많은 해를 거쳐가며 잘 정착하고 극복해 왔던 시간들이 스쳐가서 한참을 생각에 잠겼었는데.. 앞으로는 네 반쪽과 함께 더욱 행복한 시간들 만들어 가길 기도할께. 더불어 영미와 네 반쪽을 똑 닮은 아이들도 곧 함께 하기를 진심으로 바란다. ♡ 사랑해 ♡</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">Stefanie</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 19, 2016</span>
+												<span class="gb-time">, 10:04 AM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">This is so beautiful just like you!</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">이수림</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 19, 2016 </span>
+												<span class="gb-time">, 3:25 AM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">둘이 벌써 닮은 걸 보니 잘 살겠어!</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">김신영</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 18, 2016</span>
+												<span class="gb-time">, 10:59 AM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">와.. 태어나서 이제껏 보아온 청첩장 중에 제일 사랑스런 청첩장이다 정말.
+										청첩장만 보고 찡해보긴 처음이네.
+										형 옛날 사진 중에 내가 찍어준 학창시절 사진이 들어있는 것도 훈훈하고…
+										아무튼 형, 정말 진심으로 결혼 축하해.
+										형수님은 단 한 번도 뵌적이 없는데도 사진 몇 장만으로도 얼마나 좋으신 분인지가
+										충분히 느껴져서 신기할 따름이야 ㅎㅎ
+										다시 한 번 축하하고, 당일날 봐~!</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">황동환♡김소연♡황지우</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 18, 2016 </span>
+												<span class="gb-time">, 5:22 AM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">아가씨♡♡~ 축하해요.  고모부♡♡  반가워요. 사진으로 뵙지만, 인상이  느무느무^^  좋으세요.
+										두 분의 밝은 미소를 보니 저도 행복해 지네요.  잘 어울리는 한 쌍의 화목한 가정을  축복드려요.  그리고 우리 아가씨  많이 사랑해주시고, 아껴주시고,  위해 주셔야해요!!! 고모부 맘 속에  일순위로 평생 ㅎㅎ!!^^
+										 최고로 멋진 신랑님과 최고로 아름다운 신부님을  기대하며 꽃피는 봄. 그날을  기다릴게요.  사랑합니다.</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">황동환♡김소연♡황지우</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 18, 2016 </span>
+												<span class="gb-time">, 4:22 AM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">아가씨~♡♡ 너무 축하드려요.  미소가  닮은 두 분의 모습을 보니 함께  행복해지네요.  항상  밝게 웃으며  사랑이 넘치는 가정 만들어 가시리라  믿어요.  화이팅!!!
+										최고로 멋진 신랑님과  신부님을  기대할게요.~~ 건강 관리 잘 하시고요.  사랑해요.♡♡</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">지수(종수도 끼어서)</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 17, 2016</span>
+												<span class="gb-time">, 9:23 PM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">영미범한! 범한영미!
+										미국 와서 정말 잘했다고 생각되는 일 중 하나, 두 사람 만나게 해준 것. (에햄~! ^^*)
+										결혼식에 못가서 얼마나 서운한지 모르겠어요ㅠㅠ 미쿸에서도 결혼식 또 하면 안될까?!^^;; 내 수줍어서 표현을 원래 잘 못하지만,, 두사람이 내게 얼마나 소중한지 모르겠다우후. 언제나 지금처럼만 서로 사랑하고 의지하고 노력하고 이해하고 보고싶고 용서하면서 살아요!! 그 모습 가까이서 늘 흐뭇하게 지켜볼게요.
+										두사람 결혼 진심으로 축하합니다!!! Love You!!!</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">박윤지</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 17, 2016</span>
+												<span class="gb-time">, 8:34 PM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">오빠 this is the bestest 청첩장 I've ever seen! 오빠랑 딱 어울리시는 너무 예쁘고 밝고 좋으신 분을 만나신거 같아요~~ 정말 축하드리고 행복하게 잘 사실거라  믿어의심치 않습니다 ㅋㅋ  아직 스케줄이 자유롭지 않은 쭈구리 레지던트이지만 꼭 오프 쟁취해서 뵈러 가겠습니다 ㅋㅋ 축하드려요❤️</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">Soyun</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 17, 2016</span>
+												<span class="gb-time">, 11:59 AM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">오래도록 되뇌이던 꿈을 찾아 뉴욕으로 떠난 너를 참 멋있다고 생각했어. 이제와 더욱 멋있다고 느껴지는 건 꿈을 이룬 것처럼 사랑도 이뤘다는 거야. 세상에서 가장 예쁜 나의 소꿉친구에게 이런 날이 온 것을 감사해. 그도 웃는 모습이 예쁜 너란 걸 아는지 그 모습 지키려 같이 웃어주는 사람 같아. 비록 멀리 있지만 두 사람 웃음소리 들리도록 행복하게 산다면 더는 바랄 게 없을 것 같아. 축하해, 둘이 하나 되는 시작을.</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">YOUNGJUN</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 17, 2016</span>
+												<span class="gb-time">, 1:52 AM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">격렬하게 축하한다</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">황영준</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 17, 2016</span>
+												<span class="gb-time">, 1:49 AM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">두사람 행복하게 웃고 있는 사진들 보니 눈물이 다 나려고 한다!! 정말 지금도 축하하지만 결혼식날엔 보다 격렬하게 축하하고 싶다!</div>
+									</div>
+									<div class="gb-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='test' src='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=32&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/fe53bef21746bc826ee573e968ef34c1?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name">Paula</span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 16, 2016</span>
+												<span class="gb-time">, 11:53 PM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">Congratulations~^^ You are happy couple~ good togather~ lovya~ Emile</div>
+									</div>
+									<div class="gb-entry admin-entry">
+										<div class="gb-author-info">
+											<span class="gb-author-avatar"><img alt='Bumhan 범한' src='http://2.gravatar.com/avatar/214a3822679140b3d5837138ac0c4aac?s=32&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/214a3822679140b3d5837138ac0c4aac?s=64&amp;d=mm&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' /></span>
+											<span class="gb-author-name"><a href="https://basinbald.com" target="_blank"
+											title="Visit the website of Bumhan 범한"><i>Bumhan 범한</i></a></span>
+											<span class="gb-datetime">
+												<span class="gb-date">February 14, 2016</span>
+												<span class="gb-time">, 10:43 PM</span>:
+											</span>
+										</div>
+										<div class="gb-entry-content">Show us your love and leave a kind note!</div>
+									</div>
+								</div> <!-- gwolle_gb_entries -->
+							</div> <!-- gwolle_gb closed -->
+
+
+          </div> <!-- END .entry-content -->
+				</div><!-- END .page-inner -->
+			</div><!-- END .page-item -->
+		</section>
+	</main>
+
+
+
+
+
+<footer class="footer">&copy; Copyright by <a href="mailto:bumhan.yu@gmail.com">Bumhan Yu</a></footer>
+
+<script type='text/javascript' src='/js/custom-libraries.js'></script>
+<script type='text/javascript' src='/js/custom.js'></script>
+<script type='text/javascript' src='http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js?ver=1.9'></script>
+<script type='text/javascript' src='/js/embed.min.js'></script>
+
+	</body>
+
+</html>

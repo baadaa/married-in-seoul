@@ -78,6 +78,14 @@ main {
 #wpgmza_map img { max-width:none !important; }
 .wpgmza_widget { overflow: auto; }
 
+.entry-title {
+  line-height: 100%;
+}
+.entry-title span {
+  font-size: 0.2rem;
+  line-height: 0.2rem;
+}
+
 footer.footer {
   float: left;
   font-size: 1rem;
